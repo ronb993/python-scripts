@@ -21,19 +21,21 @@ while calculate:
     sNum = float(input("Please enter second number: "))
     print(fNum, o, sNum)
     if o == "+":
-        print(addition(fNum, sNum))
+        answer = addition(fNum, sNum)
 
     elif o == "*":
-        print(multiply(fNum, sNum))
+        answer = multiply(fNum, sNum)
 
     elif o == "-":
-        print(subtraction(fNum, sNum))
+        answer = subtraction(fNum, sNum)
 
     elif o == "/":
-        print(division(fNum, sNum))
+        answer = division(fNum, sNum)
 
     else:
         print("Wrong operator")
+
+    print("Result:", + answer)
 
     try_again = input("do you want to try again y/n: ")
 
