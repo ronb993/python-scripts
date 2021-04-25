@@ -1,4 +1,4 @@
-# Random Calculator written for Python3
+# Simple calculator written for Python3
 
 calculate = True
 
