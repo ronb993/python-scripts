@@ -35,7 +35,7 @@ while calculate:
     else:
         print("Wrong operator")
 
-    print("Result:", + answer)
+    print("Result: {}".format(answer))
 
     try_again = input("do you want to try again y/n: ")
 
