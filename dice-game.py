@@ -1,5 +1,12 @@
+import requests
 import random
 import math
+myHook = ""
+def send_discord(msg, url: str):
+    if not url:
+        return
+    data = {"content": f"{msg} "}
+    requests.post(url, json=data)
 
 def die(i):
     return "\u2680\u2681\u2682\u2683\u2684\u2685"[i - 1]
@@ -37,4 +44,4 @@ if __name__ == "__main__":
     dice_num = [1,2,3,4,5,6]
     run_loop()
     roll_results()
-    
+    send_discord(roll_results, myHook)
